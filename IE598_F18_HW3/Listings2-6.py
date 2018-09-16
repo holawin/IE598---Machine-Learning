@@ -22,3 +22,6 @@ for i in range(208):
 plot.xlabel("Attribute Index")
 plot.ylabel(("Attribute Values"))
 plot.show()
+print("My name is Habeeb Olawin")
+print("My NetID is: holawin2")
+print("I hereby certify that I have read the University policy on Academic Integrity and that I am not in violation.")

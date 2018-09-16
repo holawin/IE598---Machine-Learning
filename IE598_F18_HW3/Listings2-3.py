@@ -62,3 +62,6 @@ for elt in colData:
 sys.stdout.write("\nCounts for Each Value of Categorical Label \n")
 print(list(unique))
 print(catCount)
+print("My name is Habeeb Olawin")
+print("My NetID is: holawin2")
+print("I hereby certify that I have read the University policy on Academic Integrity and that I am not in violation.")

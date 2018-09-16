@@ -28,3 +28,6 @@ for row in xList:
     colData.append(float(row[col]))
 stats.probplot(colData, dist="norm", plot=pylab)
 pylab.show()
+print("My name is Habeeb Olawin")
+print("My NetID is: holawin2")
+print("I hereby certify that I have read the University policy on Academic Integrity and that I am not in violation.")
