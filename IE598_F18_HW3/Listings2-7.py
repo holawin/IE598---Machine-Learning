@@ -9,16 +9,15 @@ target_url = ("https://archive.ics.uci.edu/ml/machine-learning-"
 "databases/undocumented/connectionist-bench/sonar/sonar.all-data")
 #read rocks versus mines data into pandas data frame
 rocksVMines = pd.read_csv(target_url,header=None, prefix="V")
-for i in range(208):
-    #assign color based on "M" or "R" labels
-    if rocksVMines.iat[i,60] == "M":
-        pcolor = "red"
-    else:
-              pcolor = "blue"
-
-    #plot rows of data as if they were series data
-    dataRow = rocksVMines.iloc[i,0:60]
-    dataRow.plot(color=pcolor)
-plot.xlabel("Attribute Index")
-plot.ylabel(("Attribute Values"))
+#calculate correlations between real-valued attributes
+dataRow2 = rocksVMines.iloc[1,0:60]
+dataRow3 = rocksVMines.iloc[2,0:60]
+plot.scatter(dataRow2, dataRow3)
+plot.xlabel("2nd Instance")
+plot.ylabel(("3rd Instance"))
+plot.show()
+dataRow21 = rocksVMines.iloc[20,0:60]
+plot.scatter(dataRow2, dataRow21)
+plot.xlabel("2nd Instance")
+plot.ylabel(("21st Instance"))
 plot.show()
